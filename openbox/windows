@@ -1,0 +1,40 @@
+#!/bin/bash
+# wmctrl -lG
+# xprop | grep "CLASS"
+
+openbox --restart
+pkill conky
+sleep 1
+conky -c ~/.config/openbox/conkyrc
+
+
+wmctrl -a Telegram
+wmctrl -a Konsole
+wmctrl -a Kate
+wmctrl -a Dolphin
+wmctrl -a Chromium
+wmctrl -a SMPlayer
+
+wmctrl -r Telegram    -e 0,0700,021,0896,0930
+wmctrl -r Kate        -e 0,0450,041,1144,0980
+wmctrl -r Dolphin     -e 0,0370,061,1224,0880
+# wmctrl -r Chromium    -e 0,0235,081,1359,1000
+wmctrl -r Konsole     -e 0,0550,101,1044,0800
+wmctrl -r SMPlayer    -e 0,2242,021,0640,0140
+
+wmctrl -r Telegram  -b toggle,shaded
+wmctrl -r Konsole   -b toggle,shaded
+wmctrl -r Kate      -b toggle,shaded
+wmctrl -r Dolphin   -b toggle,shaded
+wmctrl -r Chromium  -b toggle,shaded
+wmctrl -r SMPlayer  -b toggle,shaded
+
+wmctrl -r Telegram  -t -1
+wmctrl -r Konsole   -t 0
+wmctrl -r Kate      -t 0
+wmctrl -r Dolphin   -t 0
+wmctrl -r Chromium  -t 0
+wmctrl -r SMPlayer  -t 0
+
+##  END  ##
+

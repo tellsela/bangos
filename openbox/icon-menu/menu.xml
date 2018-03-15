@@ -1,0 +1,301 @@
+<?xml version="3.6.1" encoding="utf-8"?>
+<!-- xprop | grep "CLASS" -->
+
+<openbox_menu xmlns="http://openbox.org/"
+        xmlns:xsi="http://www.w3.org/2001/xmlschema-instance"
+        xsi:schemalocation="http://openbox.org/
+                file:///usr/share/openbox/menu.xsd">
+
+<menu id="root-menu" label="openbox 3">
+<separator label="smallworld" />
+
+
+<separator />
+<!-- BEGIN KATE SESSIONS (KATE EDITOR) -->
+<menu id="kate-config" label="kate sessions" icon="/usr/share/icons/hicolor/48x48/apps/kate.png">
+
+  <item label="conf.openbox" icon="/usr/share/icons/hicolor/48x48/apps/kate.png">
+    <action name="execute">
+      <execute>kate -n -s conf.openbox</execute>
+    </action>
+  </item>
+
+  <item label="conf.utils" icon="/usr/share/icons/hicolor/48x48/apps/kate.png">
+    <action name="execute">
+      <execute>kate -n -s conf.utils</execute>
+    </action>
+  </item>
+
+  <item label="remote.nprn" icon="/usr/share/icons/hicolor/48x48/apps/kate.png">
+    <action name="execute">
+      <execute>kate -n -s remote.nprn</execute>
+    </action>
+  </item>  <item label="conf.bash" icon="/usr/share/icons/hicolor/48x48/apps/konsole.png">
+    <action name="execute">
+      <execute>kate -n -s conf.bash</execute>
+    </action>
+  </item>
+
+  <item label="remote.amoogli" icon="/usr/share/icons/hicolor/48x48/apps/kate.png">
+    <action name="execute">
+      <execute>kate -n -s amoogRemote</execute>
+    </action>
+  </item>
+
+  <item label="new session" icon="/usr/share/icons/hicolor/48x48/apps/kate.png">
+    <action name="execute">
+      <execute>kate</execute>
+    </action>
+  </item>
+
+</menu>
+<!-- END KATE SESSIONS (KATE EDITOR) -->
+
+
+
+<separator />
+<!-- BEGIN MOST FREQUENTLY USED PROGRAMS -->
+
+  <item label="konsole" icon="/usr/share/icons/hicolor/48x48/apps/konsole.png">
+    <action name="execute">
+      <execute>x-terminal-emulator</execute>
+    </action>
+  </item>
+
+  <item label="atom" icon="/usr/share/icons/hicolor/48x48/apps/atom.png">
+    <action name="execute">
+      <execute>atom</execute>
+    </action>
+  </item>
+
+  <item label="chromium" icon="/usr/share/icons/hicolor/48x48/apps/chromium-browser.png">
+    <action name="execute">
+      <execute>x-www-browser</execute>
+    </action>
+  </item>
+
+  <item label="Opera" icon="/usr/share/icons/hicolor/48x48/apps/opera-browser.png">
+    <action name="Execute">
+      <command>opera</command>
+      </action>
+  </item>
+
+  <item label="konqueror" icon="/usr/share/icons/hicolor/48x48/apps/konqueror.png">
+    <action name="Execute">
+      <command>konqueror</command>
+      </action>
+  </item>
+
+  <item label="dolphin" icon="/usr/share/icons/hicolor/48x48/apps/dolphin.png">
+    <action name="execute">
+      <execute>dolphin</execute>
+    </action>
+  </item>
+
+  <item label="smplayer" icon="/usr/share/icons/hicolor/48x48/apps/smplayer.png">
+    <action name="execute">
+      <command>smplayer</command>
+    </action>
+  </item>
+
+  <item label="keepassx" icon="/usr/share/icons/hicolor/48x48/apps/keepassx.png">
+    <action name="execute">
+      <execute>keepassx</execute>
+    </action>
+  </item>
+
+  <item label="telegram" icon="/usr/share/icons/hicolor/48x48/apps/telegram.png">
+    <action name="execute">
+      <execute>/opt/telegram/Telegram</execute>
+    </action>
+  </item>
+
+  <item label="ethereum" icon="/usr/share/icons/hicolor/48x48/apps/eth.png">
+    <action name="execute">
+      <execute>ethereumwallet</execute>
+    </action>
+  </item>
+
+  <item label="mist" icon="/usr/share/icons/hicolor/48x48/apps/mist.png">
+    <action name="execute">
+      <execute>mist</execute>
+    </action>
+  </item>
+
+<!-- END MOST FREQUENTLY USED PROGRAMS -->
+
+
+
+<separator/>
+<!-- BEGIN PROGRAMMING SUB-MENU -->
+<menu id="programs" label="programs" icon="/usr/share/icons/hicolor/48x48/apps/programming.png">
+
+  <!-- NETWORK -->
+  <menu id="network" label="network" >
+    <item label="ob menu editor gui">
+      <action name="execute">
+        <execute>
+          obmenu
+        </execute>
+      </action>
+    </item>
+  </menu>
+
+  <!-- OFFICE -->
+  <menu id="office" label="office">
+    <item label="ob menu editor gui">
+      <action name="execute">
+        <execute>
+          obmenu
+        </execute>
+      </action>
+    </item>
+  </menu>
+
+  <!-- MULTIMEDIA -->
+  <menu id="multimedia" label="&#9670; multimedia">
+    <item label="ob menu editor gui">
+      <action name="execute">
+        <execute>
+          obmenu
+        </execute>
+      </action>
+    </item>
+  </menu>
+
+  <!-- GRAPHICS -->
+  <menu id="graphics" label="&#9670; graphics">
+    <item label="ob menu editor gui">
+      <action name="execute">
+        <execute>
+          obmenu
+        </execute>
+      </action>
+    </item>
+  </menu>
+
+  <!-- PROGRAMMING -->
+  <menu id="programming" label="&#9670; programming">
+    <item label="ob menu editor gui">
+      <action name="execute">
+        <execute>
+          obmenu
+        </execute>
+      </action>
+    </item>
+  </menu>
+
+<menu id="/Debian" />
+
+</menu>
+<!-- END PROGRAMMING SUB-MENU -->
+
+<!-- UTILITIES MENU -->
+  <menu id="system-utils" label="utilities" icon="/usr/share/icons/hicolor/48x48/apps/utilities.png">
+
+    <item label="kde system settings">
+      <action name="execute">
+        <execute>systemsettings5</execute>
+      </action>
+    </item>
+
+    <item label="lcd/monitor settings">
+      <action name="execute">
+        <execute>kcmshell5 kcm_kscreen</execute>
+      </action>
+    </item>
+
+    <item label="synaptic package manager">
+      <action name="execute">
+        <execute>kdesudo synaptic</execute>
+      </action>
+    </item>
+
+    <item label="partition manager">
+      <action name="execute">
+        <execute>kdesudo partitionmanager</execute>
+      </action>
+    </item>
+
+    <item label="openbox configuration gui">
+      <action name="execute">
+        <execute>
+          obconf
+        </execute>
+      </action>
+    </item>
+
+    <item label="lx appearance">
+      <action name="execute">
+        <execute>lxappearance</execute>
+      </action>
+    </item>
+
+    <item label="system monitor">
+      <action name="execute">
+        <execute>ksysguard</execute>
+      </action>
+    </item>
+
+    <item label="system log files">
+      <action name="execute">
+        <execute>ksystemlog</execute>
+      </action>
+    </item>
+
+    <item label="system info">
+      <action name="execute">
+        <execute>kdesudo hardinfo</execute>
+      </action>
+    </item>
+
+</menu>
+<!-- END UTILITIES SUBMENU -->
+
+<!-- KEY BINDINGS -->
+<menu id="showkeys" label="key bindings" execute="~/.config/openbox/show_obkeys.py" icon="/usr/share/icons/hicolor/48x48/apps/key.png"/>
+
+<separator />
+<!-- Sounds & Cameral-->
+
+  <item label="sound control" icon="/usr/share/icons/hicolor/48x48/apps/sound.png">
+    <action name="execute">
+      <execute>pavucontrol</execute>
+    </action>
+  </item>
+
+  <item label="cheese" icon="/usr/share/icons/hicolor/48x48/apps/cheese.png">
+    <action name="execute">
+      <execute>cheese</execute>
+    </action>
+  </item>
+
+<separator/>
+<!-- RESTART & LOGOUT OPTIONS -->
+
+  <item label="reset windows" icon="/usr/share/icons/hicolor/48x48/apps/resetwindows.png">
+    <action name="execute">
+      <execute>/home/user0/.config/openbox/windows</execute>
+    </action>
+  </item>
+
+  <item label="restart openbox" icon="/usr/share/icons/hicolor/48x48/apps/openbox.png">
+    <action name="restart"/>
+  </item>
+
+  <item label="restart lxpanel" icon="/usr/share/icons/hicolor/48x48/apps/restart-panel.png">
+    <action name="execute">
+      <execute>lxpanelctl restart</execute>
+    </action>
+  </item>
+
+  <item label="logout" icon="/usr/share/icons/hicolor/48x48/apps/logout.png">
+    <action name="execute">
+      <execute>lxsession-logout</execute>
+    </action>
+  </item>
+
+</menu>
+
+</openbox_menu>
+

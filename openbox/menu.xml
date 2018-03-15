@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- xprop | grep "CLASS" -->
+
+<openbox_menu xmlns="http://openbox.org/"
+        xmlns:xsi="http://www.w3.org/2001/xmlschema-instance"
+        xsi:schemalocation="http://openbox.org/
+                file:///usr/share/openbox/menu.xsd">
+
+<menu id="root-menu" label="openbox 3">
+<separator label="         bangOs         "/>
+
+
+<separator />
+<!-- BEGIN KATE SESSIONS (KATE EDITOR) -->
+<menu id="kate-config" label="&#9670; kate sessions" icon="/usr/share/icons/hicolor/48x48/apps/kate.png">
+
+  <item label="conf.bash">
+    <action name="execute">
+      <execute>kate -n -s conf.bash</execute>
+    </action>
+  </item>
+
+  <item label="conf.openbox">
+    <action name="execute">
+      <execute>kate -n -s conf.openbox</execute>
+    </action>
+  </item>
+
+  <item label="conf.utils">
+    <action name="execute">
+      <execute>kate -n -s conf.utils</execute>
+    </action>
+  </item>
+
+  <item label="remote.dba">
+    <action name="execute">
+      <execute>kate -n -s remote.dba</execute>
+    </action>
+  </item>
+
+  <item label="remote.nprn">
+    <action name="execute">
+      <execute>kate -n -s remote.nprn</execute>
+    </action>
+  </item>
+
+  <item label="remote.amoogli">
+    <action name="execute">
+      <execute>kate -n -s remote.amoogli</execute>
+    </action>
+  </item>
+
+  <item label="new session">
+    <action name="execute">
+      <execute>kate</execute>
+    </action>
+  </item>
+
+</menu>
+<!-- END KATE SESSIONS (KATE EDITOR) -->
+
+
+
+<separator />
+<!-- BEGIN MOST FREQUENTLY USED PROGRAMS -->
+
+  <item label="konsole" icon=".config/openbox/icon-menu/konsole.png">
+    <action name="execute" >
+      <execute>x-terminal-emulator</execute>
+    </action>
+  </item>
+
+  <item label="chromium"  icon=".config/openbox/icon-menu/chrome.jpg">
+    <action name="execute" >
+      <execute>x-www-browser</execute>
+    </action>
+  </item>
+
+  <item label="dolphin"  icon=".config/openbox/icon-menu/dolphin.png">
+    <action name="execute">
+      <execute>dolphin</execute>
+    </action>
+  </item>
+
+  <item label="keepassx" icon=".config/openbox/icon-menu/keepass.png">
+    <action name="execute">
+      <execute>keepassx</execute>
+    </action>
+  </item>
+
+  <item label="telegram" icon=".config/openbox/icon-menu/telegram.png">
+    <action name="execute">
+      <execute>/opt/telegram/Telegram</execute>
+    </action>
+  </item>
+
+<!-- END MOST FREQUENTLY USED PROGRAMS -->
+
+
+
+<separator/>
+<!-- BEGIN PROGRAMMING SUB-MENU -->
+<menu id="programs" label="&#9670; programs">
+
+  <!-- NETWORK -->
+  <menu id="network" label="&#9670; network">
+    <item label="ob menu editor gui">
+      <action name="execute">
+        <execute>
+          obmenu
+        </execute>
+      </action>
+    </item>
+  </menu>
+
+  <!-- OFFICE -->
+  <menu id="office" label="&#9670; office">
+    <item label="ob menu editor gui">
+      <action name="execute">
+        <execute>
+          obmenu
+        </execute>
+      </action>
+    </item>
+  </menu>
+
+  <!-- MULTIMEDIA -->
+  <menu id="multimedia" label="&#9670; multimedia">
+    <item label="ob menu editor gui">
+      <action name="execute">
+        <execute>
+          obmenu
+        </execute>
+      </action>
+    </item>
+  </menu>
+
+  <!-- GRAPHICS -->
+  <menu id="graphics" label="&#9670; graphics">
+    <item label="ob menu editor gui">
+      <action name="execute">
+        <execute>
+          obmenu
+        </execute>
+      </action>
+    </item>
+  </menu>
+
+  <!-- PROGRAMMING -->
+  <menu id="programming" label="&#9670; programming">
+    <item label="ob menu editor gui">
+      <action name="execute">
+        <execute>
+          obmenu
+        </execute>
+      </action>
+    </item>
+  </menu>
+
+<menu id="/Debian" />
+
+</menu>
+<!-- END PROGRAMMING SUB-MENU -->
+
+<!-- UTILITIES MENU -->
+  <menu id="system-utils" label="&#9670; utilities">
+
+    <item label="kde system settings">
+      <action name="execute">
+        <execute>systemsettings5</execute>
+      </action>
+    </item>
+
+    <item label="lcd/monitor settings">
+      <action name="execute">
+        <execute>kcmshell5 kcm_kscreen</execute>
+      </action>
+    </item>
+
+    <item label="synaptic package manager">
+      <action name="execute">
+        <execute>kdesudo synaptic</execute>
+      </action>
+    </item>
+
+    <item label="partition manager">
+      <action name="execute">
+        <execute>kdesudo partitionmanager</execute>
+      </action>
+    </item>
+
+    <item label="openbox configuration gui">
+      <action name="execute">
+        <execute>
+          obconf
+        </execute>
+      </action>
+    </item>
+
+    <item label="lx appearance">
+      <action name="execute">
+        <execute>lxappearance</execute>
+      </action>
+    </item>
+
+    <item label="system monitor">
+      <action name="execute">
+        <execute>ksysguard</execute>
+      </action>
+    </item>
+
+    <item label="system log files">
+      <action name="execute">
+        <execute>ksystemlog</execute>
+      </action>
+    </item>
+
+    <item label="system info">
+      <action name="execute">
+        <execute>kdesudo hardinfo</execute>
+      </action>
+    </item>
+
+</menu>
+<!-- END UTILITIES SUBMENU -->
+
+<!-- KEY BINDINGS -->
+<menu id="showkeys" label="&#9670; key bindings" execute="~/.config/openbox/show_obkeys.py" />
+
+<separator/>
+<!-- RESTART & LOGOUT OPTIONS -->
+
+<item label="time shift" icon=".config/openbox/icon-menu/timeshift.jpeg">
+    <action name="execute">
+      <execute>gksudo timeshift-gtk</execute>
+    </action>
+  </item>
+
+  <item label="reset windows" icon=".config/openbox/icon-menu/reset-windows.png">
+    <action name="execute">
+      <execute>/home/user0/.config/openbox/windows</execute>
+    </action>
+  </item>
+
+  <item label="restart openbox" icon=".config/openbox/icon-menu/restart-openbox.png">
+    <action name="restart"/>
+  </item>
+
+
+  <item label="logout" icon=".config/openbox/icon-menu/logout.jpeg">
+    <action name="execute">
+      <execute>lxsession-logout</execute>
+    </action>
+  </item>
+
+</menu>
+
+</openbox_menu>
+
